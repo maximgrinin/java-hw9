@@ -33,13 +33,13 @@ public class Main {
         // До начала программирования решите эту задачу на бумаге - возьмите p=10, k=2, x = 1000
         System.out.println();
         System.out.print("Введите сумму вклада: ");
-        float depositAmount = scanner.nextFloat();
+        double depositAmount = scanner.nextDouble();
         System.out.print("Введите срок вклада: ");
         int depositTerm = scanner.nextInt();
         System.out.print("Введите процентную ставку вклада: ");
-        float depositInterestRate = scanner.nextFloat();
+        double depositInterestRate = scanner.nextDouble();
 
-        float depositInterest = 0.0F;
+        double depositInterest = 0.0;
         for (int i = 0; i < depositTerm; i++) {
             depositInterest = depositAmount * depositInterestRate / 100;
             depositAmount = (int) (depositAmount + depositInterest);
